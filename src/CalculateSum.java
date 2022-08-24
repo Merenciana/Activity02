@@ -2,18 +2,14 @@ import java.util.Scanner;
 public class CalculateSum {
     public static void main(String[] args)
     {
-        int i,n=0,s=0;
-        {
-            System.out.print("Input the 10 numbers : ");
+        int i, num = 10, sum = 0;
+        //executes until the condition returns true
+        for(i = 1; i <= num; ++i){
+            //adding the value of i into sum variable
+            sum = sum + i;
         }
-        for (i= 0; i < 10; i++)
-        {
-            Scanner in = new Scanner(System.in);
-            n = in.nextInt();
-            if(n > 0)
-            s +=n;
-           }
-        System.out.println("The sum of first 10 positive numbers is : " +s);
+        //prints the sum
+        System.out.println("Sum of first 10 positive numbers is: " + sum);
     }
 }
 
